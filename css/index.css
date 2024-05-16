@@ -1,0 +1,60 @@
+:root {
+  --color: #77b1a9;
+}
+* {
+  transition-duration: 0.5s;
+}
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--color);
+  user-select: none;
+}
+.background-quote {
+  position: absolute;
+  font-size: 1.1em;
+  color: #7209b7;
+  font-family: sans-serif;
+  z-index: 1;
+  transition: 0.5s;
+}
+#quote-box {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  padding: 20px 20px;
+  margin: auto;
+  color: var(--color);
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+}
+.quote-sign {
+  fill: var(--color);
+}
+
+#author {
+  font-size: 15px;
+  text-align: right;
+  margin: 10px;
+}
+#new-quote {
+  font-size: 20px;
+  color: white;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: var(--color);
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  font-size: 15px;
+}
